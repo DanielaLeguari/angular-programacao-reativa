@@ -1,6 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { LivrosResultado } from '../models/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class LivroService {
     private http: HttpClient
   ) { }
 
-  buscarLivros(valorDitado: string): Observable<any> {
+  buscarLivros(valorDitado: string): Observable<LivrosResultado> {
     const params = new HttpParams().append('q', valorDitado);
     return this.http.get(this.API, { params });
   }
