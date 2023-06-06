@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve --o` 
+Run `ng serve --o`
 
 ## Padrão do projeto
 
@@ -13,7 +13,6 @@ Run `ng serve --o`
 ## API
 
 - Google Books APIs
-
 
 ## O que é RxJS?
 
@@ -34,8 +33,14 @@ Run `ng serve --o`
 
 - Map - Operador de transformação. Transforma o observable de acordo com a função passada. Retorna um observable modificado.
 
-
 ## Pipes no Angular |
 
 - São funções simples que recebem um valor de entrada e o retornam modificado. Essa transformação acontece somente a nível de template.
 - Essas modificações são tão comuns que já existem diversos Pipes prontos para utilizarmos, como por exemplo o DatePipe que formata datas, o UpperCasePipe que transforma todo o texto em letras maiúsculas e LoweCasePipe em minúsculas, além de outros.
+
+- `DatePipe`: formata um valor de data de acordo com as regras de localidade.
+- `UpperCasePipe`: transforma o texto em letras maiúsculas.
+- `LowerCasePipe`: transforma o texto em letras minúsculas.
+- `CurrencyPipe`: transforma um número em uma string de moeda, formatada de acordo com as regras de localidade.
+- `DecimalPipe`: transforma um número em uma string com um ponto decimal, formatado de acordo com as regras de localidade.
+- `PercentPipe`: transforma um número em uma string de porcentagem, formatada de acordo com as regras de localidade.
