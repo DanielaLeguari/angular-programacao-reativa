@@ -25,3 +25,11 @@ Run `ng serve --o`
 2. Observer, o qual representa a ideia de uma coleção de callbacks. Ele consegue ouvir os valores entregues pelo Observable.
 
 - O padrão observer é a base da programação orientada a eventos. Outro nome para esse padrão é Pub/Sub, abreviação de publication / subscription ("publicação" / "assinatura").
+
+## Operadores RxJS
+
+- Pipe- Função que serve para agrupar múltiplos operadores. Não modifica o observable anterior.
+
+- Tap - Operador de serviços públicos. Usado para debugging. Não modifica o observable.
+
+- Map - Operador de transformação. Transforma o observable de acordo com a função passada. Retorna um observable modificado.
