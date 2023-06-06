@@ -33,3 +33,9 @@ Run `ng serve --o`
 - Tap - Operador de serviços públicos. Usado para debugging. Não modifica o observable.
 
 - Map - Operador de transformação. Transforma o observable de acordo com a função passada. Retorna um observable modificado.
+
+
+## Pipes no Angular |
+
+- São funções simples que recebem um valor de entrada e o retornam modificado. Essa transformação acontece somente a nível de template.
+- Essas modificações são tão comuns que já existem diversos Pipes prontos para utilizarmos, como por exemplo o DatePipe que formata datas, o UpperCasePipe que transforma todo o texto em letras maiúsculas e LoweCasePipe em minúsculas, além de outros.
