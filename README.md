@@ -44,3 +44,19 @@ Run `ng serve --o`
 - `CurrencyPipe`: transforma um número em uma string de moeda, formatada de acordo com as regras de localidade.
 - `DecimalPipe`: transforma um número em uma string com um ponto decimal, formatado de acordo com as regras de localidade.
 - `PercentPipe`: transforma um número em uma string de porcentagem, formatada de acordo com as regras de localidade.
+
+
+## Mais operadores RXJS
+
+- switchMap - Operador de Transformação. Cancela requisições de observables anteriores, emitindo valores apenas do Observable projetado mais recentemente.
+
+- filter - Operador de filtragem. Filtra os itens emitidos pelo Observable de origem, permitindo apenas aqueles que satisfaçam uma condição especificada.
+
+- debounceTime - Operador de filtragem. Retorna um Observable que atrasa as emissões do Observable de origem pelo tempo especificado.
+
+- distinctUntilChanged - Operador de filtragem. Retorna um Observable que emite todos os valores enviados pelo observable de origem se forem distintos em comparação com o último valor emitido pelo observable de resultado.
+
+
+## Tratamento de Erros
+
+- O catchError() não emite valores, somente captura o erro e nos inscreve em outro Observable — um que possua alguma mensagem de erro, por exemplo. O throwError(), por sua vez, retorna um novo Observable que emite imediatamente o erro e encerra o seu ciclo de vida.
